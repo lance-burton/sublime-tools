@@ -1,0 +1,32 @@
+[
+    {
+        "caption": "Mine",
+        "mnemonic": "m",
+        "id": "mine",
+        "children":
+        [
+            {
+                "caption": "Show whitespace",
+                "mnemonic": "w",
+                "id": "whitespace",
+                "children":
+                [
+                    {
+                        "command": "set_setting",
+                        "args": {"setting": "draw_white_space",
+                                 "value": "selection"},
+                        "caption": "Selection"
+                    },
+                    {
+                        "command": "set_setting",
+                        "args": {"setting": "draw_white_space",
+                                 "value": "all"},
+                        "caption": "Always "
+                    }
+                ]
+            },
+            { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "js", "m", "mm", "tpl.html"]}, "caption": "Switch Header/Implementation", "mnemonic": "H" },
+  
+        ]
+    }
+]
